@@ -90,7 +90,11 @@ The cropped datasets are inside the project ZIP, not separate downloads on GitHu
 - **Original photos:** On the [Mendeley dataset page](https://data.mendeley.com/datasets/nfcv6x8n7h/1), choose **Download All**.
 - **Test set used in Cell 4:** The separate `data/evaluation/test-eye-strips.zip` contains the same test images as the processed archive. You don’t need to extract it to run the notebook.
 
-**How the images are prepared:** The photos are rotated to line up the eyes and cropped to a narrow strip around them. The model uses grayscale images whose brightness is normalized to reduce the effect of differences in overall lighting.
+### Reproducing the preprocessing
+
+Start with the original ZIP from the [Mendeley dataset page](https://data.mendeley.com/datasets/nfcv6x8n7h/1). Keep the original Training, Validation, and Test splits and their class folders separate. The project ZIP contains the preprocessing code in `scripts/crop.py`. The script locates the eyes, rotates and scales the image to align them, and saves a **128 × 20 pixel grayscale eye strip**. Photos with glasses, closed or nearly closed eyes, or insufficient detail for a crop may be skipped; the script records skipped files in a review CSV.
+
+Brightness normalization happens later, when `scripts/features.py` loads the saved strips. It divides each strip’s pixel values by that strip’s average brightness. You can retrain and evaluate the model in Colab using the included eye strips without repeating the cropping.
 
 **Dataset credit:** Thillaikarasi R (2026), [*Child Facial Image Dataset for Autism Spectrum Detection*, version 1](https://doi.org/10.17632/nfcv6x8n7h.1), Mendeley Data. The source is listed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The bundled eye images are adapted from the original photos. Attribution does not replace permission to share identifiable images. Check privacy and consent requirements before sharing or publishing these files.
 
