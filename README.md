@@ -8,13 +8,24 @@ The broader question is whether patterns in photos could one day complement deve
 
 You don’t need to know Python or install anything on your computer. The project runs in **Google Colab**, a website that runs code in your browser. A **notebook** is a page with instructions and blocks of code called **cells**. To run a cell, click the ▶ button on its left. You don’t need to edit the code. The cell numbers below refer to the labels **inside the notebook**.
 
+### Download two files
+
+Open each file page below and click **Download raw file** (the download arrow above the file preview).
+
+- [Colab notebook: `Autism_Image_Classification.ipynb`](Autism_Image_Classification.ipynb)
+- [Project ZIP: `autism-image-classification.zip`](autism-image-classification.zip)
+
+Keep the project ZIP zipped. You do not need Git or the repository’s **Code → Download ZIP** option.
+
 ### Open the notebook in Google Colab
 
-Open [Google Colab](https://colab.research.google.com/) and click **Upload notebook** at the top of the page. Open Autism_Image_Classification.ipynb.
+Open [Google Colab](https://colab.research.google.com/) and click **Upload notebook** at the top of the page. Choose `Autism_Image_Classification.ipynb`, not the ZIP.
 
 ### Load the project and set up Colab
 
-Run **Cell 1**. When Colab asks for a file, choose the **project ZIP**, not the notebook you just opened. Then run **Cell 2** and wait for setup to finish. You can skip **Cells 3 and 4** for this first run.
+In **Cell 1**, leave **Project ZIP** selected, even though you downloaded the file from GitHub. Click ▶ and, when prompted, upload `autism-image-classification.zip`. Do not select **Public GitHub repository** for this project: the scripts and model are inside the ZIP, not separate files in the repository.
+
+Once the project loads, run **Cell 2** and wait for the green check. A spinning circle means the cell is still running. You can skip **Cells 3 and 4** for this first run.
 
 ### Try a photo
 
@@ -73,9 +84,11 @@ The calculator assumes that, for a given true label, one prediction does not tel
 
 ## Find the data
 
-- **Processed eye images:** Open [`data/processed-eye-strips.zip`](data/processed-eye-strips.zip) inside the extracted project folder. It contains the processed Training, Validation, and Test images.
+The cropped datasets are inside the project ZIP, not separate downloads on GitHub. If you want to browse them, extract the project ZIP and look in the `data/` folder. You do not need to extract them to run the notebook.
+
+- **Processed eye images:** Open `data/processed-eye-strips.zip` inside the extracted project folder. It contains the processed Training, Validation, and Test images.
 - **Original photos:** On the [Mendeley dataset page](https://data.mendeley.com/datasets/nfcv6x8n7h/1), choose **Download All**.
-- **Test set used in Cell 4:** The separate [`data/evaluation/test-eye-strips.zip`](data/evaluation/test-eye-strips.zip) contains the same test images as the processed archive. You don’t need to extract it to run the notebook.
+- **Test set used in Cell 4:** The separate `data/evaluation/test-eye-strips.zip` contains the same test images as the processed archive. You don’t need to extract it to run the notebook.
 
 **How the images are prepared:** The photos are rotated to line up the eyes and cropped to a narrow strip around them. The model uses grayscale images whose brightness is normalized to reduce the effect of differences in overall lighting.
 
