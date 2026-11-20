@@ -1,0 +1,30 @@
+Autism Image Classification
+Notebook Use and Sharing License
+
+Copyright (c) 2026 Nathan Carlston. All rights reserved except as stated below.
+
+You may, without fee, download, copy, run, and use the unmodified
+Autism_Image_Classification.ipynb notebook. You may provide inputs, change
+settings through the notebook's built-in controls, and save your own results.
+Using those controls does not count as modifying the notebook. To share the
+notebook, use the unmodified original file, not a copy containing your saved
+inputs or outputs.
+
+You may share a link to the notebook or redistribute an unmodified copy. If
+you redistribute a copy, include this license notice and give the following
+credit with the copy or on the page where it is offered:
+
+    Autism Image Classification notebook by Nathan Carlston
+    Source: https://github.com/nfc314/autism-image-classification
+
+This license does not grant permission to edit the notebook's code or text,
+create adapted versions, or distribute modified copies. Nothing in this notice
+limits rights you have under applicable law or rights granted by GitHub's Terms
+of Service for content hosted on GitHub.
+
+This license applies only to the original notebook content owned by Nathan
+Carlston. It does not grant rights to the project ZIP, supporting scripts,
+dataset, image crops, pretrained model weights, or other third-party material.
+
+The notebook is provided as is, without warranty. It is a research
+demonstration, not a tool for clinical screening or diagnosis.
