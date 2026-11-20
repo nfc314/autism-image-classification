@@ -19,11 +19,11 @@ Keep the project ZIP zipped. You do not need Git or the repository’s **Code �
 
 ### Open the notebook in Google Colab
 
-Open [Google Colab](https://colab.research.google.com/) and click **Upload notebook** at the top of the page. Choose `Autism_Image_Classification.ipynb`, not the ZIP.
+Open [Google Colab](https://colab.research.google.com/). If you’re not already signed in, sign in with your Google account first. Then click **Upload notebook** at the top of the page and choose `Autism_Image_Classification.ipynb`, not the ZIP.
 
 ### Load the project and set up Colab
 
-In **Cell 1**, leave **Project ZIP** selected, even though you downloaded the file from GitHub. Click ▶ and, when prompted, upload `autism-image-classification.zip`. Do not select **Public GitHub repository** for this project: the scripts and model are inside the ZIP, not separate files in the repository.
+Run **Cell 1** by clicking ▶. When prompted, upload `autism-image-classification.zip`.
 
 Once the project loads, run **Cell 2** and wait for the green check. A spinning circle means the cell is still running. You can skip **Cells 3 and 4** for this first run.
 
