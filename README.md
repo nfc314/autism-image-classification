@@ -10,7 +10,7 @@ You don’t need to know Python or install anything on your computer. The projec
 
 ### Open the notebook in Google Colab
 
-Extract `autism-image-classification.zip`, but keep the ZIP itself. Open [Google Colab](https://colab.research.google.com/) and click **Upload notebook** at the top of the page. In the extracted project folder, open [`notebooks/Autism_Image_Classification.ipynb`](notebooks/Autism_Image_Classification.ipynb).
+Open [Google Colab](https://colab.research.google.com/) and click **Upload notebook** at the top of the page. Open [`notebooks/Autism_Image_Classification.ipynb`](notebooks/Autism_Image_Classification.ipynb).
 
 ### Load the project and set up Colab
 
